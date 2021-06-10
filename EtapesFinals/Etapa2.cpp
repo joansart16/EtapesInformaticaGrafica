@@ -51,18 +51,186 @@ void Display(void)
 	glClear(GL_COLOR_BUFFER_BIT);
 
 	glPushMatrix();
+
+	
+	////TRIANGLE ROTANT ENMIG
+	//// Rotamos las proximas primitivas
+	//glRotatef(fAngulo3, 0.0f, 0.0f, 1.0f);
+	//// Creamos a continuaci�n dibujamos los tres poligonos
+	//glBegin(GL_POLYGON);
+	//glColor3f(1.0f, 1.0f, 1.0f);
+	//glVertex3f(0.0f, 0.0f, 0.0f);
+	//glColor3f(0.0f, 1.0f, 0.0f);
+	//glVertex3f(1.0f, 0.0f, 0.0f);
+	//glColor3f(0.0f, 1.0f, 0.0f);
+	//glVertex3f(-0.5f, 0.866f, 0.0f);
+	//glEnd();
+
+	//glBegin(GL_POLYGON);
+	//glColor3f(1.0f, 1.0f, 1.0f);
+	//glVertex3f(0.0f, 0.0f, 0.0f);
+	//glColor3f(1.0f, 0.0f, 0.0f);
+	//glVertex3f(1.0f, 0.0f, 0.0f);
+	//glColor3f(0.0f, 0.0f, 1.0f);
+	//glVertex3f(-0.5f, -0.866f, 0.0f);
+	//glEnd();
+
+	//glBegin(GL_POLYGON);
+	//glColor3f(1.0f, 1.0f, 1.0f);
+	//glVertex3f(0.0f, 0.0f, 0.0f);
+	//glColor3f(0.0f, 1.0f, 1.0f);
+	//glVertex3f(-0.5f, 0.866f, 0.0f);
+	//glColor3f(0.0f, 0.0f, 1.0f);
+	//glVertex3f(-0.5f, -0.866f, 0.0f);
+	//glEnd();
+
+
+////PRIMERA PART, Q ZONES I UN POLÍGON A CADA ZONA
+//
+//	glMatrixMode(GL_MODELVIEW);
+//	//desrotam perque el quadrat no es mogui
+//	//glRotatef(fAngulo, 0.0f, 0.0f, -1.0f);
+//	//Quadrat adalt esquerra
+//
+//	glClear(GL_COLOR_BUFFER_BIT);
+//
+//	glPushMatrix();
+//
+//
+//	//Triangle adalt esquerra
+//	glPushMatrix();
+//	glLoadIdentity();
+//
+//	glTranslatef(-0.5f, 0.75f, 0.0f);
+//	glRotatef(30.0f, 0.0f, 0.0f, 1.0f);
+//	glScalef(0.75, 0.25, 0.0);
+//	
+//	glTranslatef(0.5f, -0.75f, 0.0f);
+//	glBegin(GL_POLYGON);
+//
+//	glColor3f(1.0f, 1.0f, 0.0f);
+//	glVertex3f(-0.5f, 0.75f, 0.0f);
+//	glVertex3f(-0.75f, 0.25f, 0.0f);
+//	glVertex3f(-0.25f, 0.25f, 0.0f);
+//
+//
+//	glEnd();
+//
+//	glPopMatrix();
+//
+//
+//
+//	//Heptagon adalt esquerra
+//
+//	int numLados = 7;
+//	double grados = (360 / numLados);
+//	double aux = grados;
+//	
+//
+//
+//	for (int i = 0; i < numLados; i++) {
+//		puntosx[i] = ((2 * (cos((M_PI * grados) / 180))) + xi);
+//		puntosy[i] = ((2 * (sin((M_PI * grados) / 180))) + yi);
+//
+//		grados = grados + aux;
+//
+//	}
+//	
+//	glPushMatrix();
+//	glLoadIdentity();
+//	glRotatef(20.0f, 0.0, 0.0, 1.0);
+//	glScalef(0.1, 0.1, 0);
+//	
+//	
+//	glTranslatef(5.0f, 5.0f, 0.0);
+//
+//	//glTranslatef(fMovX, fMovY, 0.0);
+//	//glRotatef(fAngulo, 0.0f, 0.0f, 1.0f);
+//	glBegin(GL_POLYGON);
+//	glColor3f(1.0, 0.5, 0.0);
+//	for (int i = 0; i < numLados; i++) {
+//		glVertex3f(puntosx[i], puntosy[i], 1.0);
+//		
+//	}
+//	
+//	glEnd();
+//	glPopMatrix();
+//
+//
+//	
+//
+//	glPushMatrix();
+//
+//
+//	//Rectangle abaix esquerra
+//	glPushMatrix();
+//	glLoadIdentity();
+//	
+//	glScalef(0.5, 0.25, 0.0);
+//	glRotatef(30.0f, 0.0f, 0.0f, 1.0f);
+//	
+//
+//	glTranslatef(-2.5f, -2.0f, 0.0f);
+//	glBegin(GL_POLYGON);
+//
+//	glColor3f(0.2f, 0.6f, 0.5f);
+//	glVertex3f(0.0f, 0.0f, 0.0f);
+//	glVertex3f(1.0f, 0.0f, 0.0f);
+//	glVertex3f(1.0f, 1.0f, 0.0f);
+//	glVertex3f(0.0f, 1.0f, 0.0f);
+//
+//
+//	glEnd();
+//
+//	glPopMatrix();
+//
+//	//Triangle abaix dreta
+//	glPushMatrix();
+//	glLoadIdentity();
+//	glRotatef(30.0f, 0.0f, 0.0f, 1.0f);
+//	glScalef(0.5, 0.5, 0.0);
+//	
+//
+//
+//	glTranslatef(0.0f, -2.0f, 0.0f);
+//	glBegin(GL_POLYGON);
+//
+//	glColor3f(0.8f, 0.2f, 0.4f);
+//	glVertex3f(0.0f, 0.0f, 0.0f);
+//	glVertex3f(1.0f, 0.0f, 0.0f);
+//	glVertex3f(1.0f, 1.0f, 0.0f);
+//
+//
+//
+//	glEnd();
+//
+//	glPopMatrix();
+	////FINALITZACIÓ  4 QUADRANTS
+
+
+
+	
+
+
 	//PÈNDUL
+
 	//Primer pal
 	glPushMatrix();
+	
 	glLoadIdentity();
+
 	glTranslatef(0.0, 1.0, 0.0);
 	glRotatef(fAngulo, 0.0, 0.0, 1.0);
+
 	glBegin(GL_POLYGON);
+
 	glColor3f(0.2f, 0.5f, 0.2f);
 	glVertex3f(-0.02, 0.0, 0.0);
 	glVertex3f(0.02, 0.0, 0.0);
 	glVertex3f(0.02, -0.4, 0.0);
 	glVertex3f(-0.02, -0.4, 0.0);
+
+
 	glEnd();
 
 	const  double pi2 = 6.28318530718;
@@ -205,7 +373,9 @@ void Idle(void)
 			dreta2 = true;
 		}
 	}
-	fAngulo3 += 0.3;
+	fAngulo3 += 0.3;	
+	
+	// Indicamos que es necesario repintar la pantalla
 	glutPostRedisplay();
 }
 
