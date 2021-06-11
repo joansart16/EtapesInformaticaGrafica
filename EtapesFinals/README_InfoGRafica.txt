@@ -12,6 +12,8 @@ Comandes GRUA:
 	- TECLA [1 i 2]: Activar i desactivar llums.
 	- TECLA [c]: Cambiar la vista, d'un moviment lliure per el mapa a una vista fixa, amb posibilitat de 5 vistes diferents.
 	- TECLA [3]: Canvi entre les vistes fixes.
-	- TECLA [q i e]: per pujar la càmara i baixar-la en el moviment lliure. Els altres moviments de la càmara són intuïtius amb les teclas ASDW i les fletxes del teclat.
-
+	- TECLA [q]: Per baixar la càmara en el moviment lliure.
+	- TECLA [e]: Per pujar la càmara en el moviment lliure.
+	- TECLA [fletxes]: Rotacio damunt l'eix de la càmara.
+	- TECLA []
  	
