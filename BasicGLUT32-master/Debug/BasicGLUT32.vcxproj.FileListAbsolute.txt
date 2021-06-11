@@ -1,0 +1,2 @@
+C:\Users\flori\Documents\Universidad\Tercer Año\BasicGLUT32-master\Debug\BasicGLUT32.exe
+C:\Users\flori\Documents\Universidad\Tercer Año\BasicGLUT32-master\Debug\BasicGLUT32.pdb
