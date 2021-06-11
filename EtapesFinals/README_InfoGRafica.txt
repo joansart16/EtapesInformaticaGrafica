@@ -15,7 +15,7 @@ Comandes ESCENARI:
 	- TECLA [f]: Baixar l'altura de la boira
 	
 Comandes CÀMERA:
-	- TECLA [c]: Cambiar la vista, d'un moviment lliure per el mapa a una vista fixa, amb posibilitat de 5 vistes diferents.
+	- TECLA [c]: Canviar la vista, d'un moviment lliure per el mapa a una vista fixa, amb posibilitat de 5 vistes diferents.
 	- TECLA [3]: Canvi entre les vistes fixes.
 	- TECLA [q]: Per baixar la càmara en el moviment lliure.
 	- TECLA [e]: Per pujar la càmara en el moviment lliure.
