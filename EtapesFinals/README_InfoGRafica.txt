@@ -9,11 +9,16 @@ Comandes GRUA:
 	- TECLA [j]: Serveix per GIRAR en sentit horari la peça d'unió entre la columna principal y el braç de la grua
 	- TECLA [i]: Serveix per MOURE cap a la columna central la peça d'unió entre el braç i la bolla.
 	- TECLA [o]: Serveix per allunyar la peça d'unió entre el braç i la bolla, de la columna principal
+Comandes ESCENARI:
 	- TECLA [1 i 2]: Activar i desactivar llums.
+	- TECLA [r]: Pujar l'altura de la boira.
+	- TECLA [f]: Baixar l'altura de la boira
+	
+Comandes CÀMERA:
 	- TECLA [c]: Cambiar la vista, d'un moviment lliure per el mapa a una vista fixa, amb posibilitat de 5 vistes diferents.
 	- TECLA [3]: Canvi entre les vistes fixes.
 	- TECLA [q]: Per baixar la càmara en el moviment lliure.
 	- TECLA [e]: Per pujar la càmara en el moviment lliure.
-	- TECLA [fletxes]: Rotacio damunt l'eix de la càmara.
-	- TECLA []
+	- TECLES [fletxes]: Rotacio damunt l'eix de la càmara.
+	- TECLES [aswd]: Moviment per l'escenari en càmara lliure.
  	
